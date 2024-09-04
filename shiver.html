@@ -13,11 +13,11 @@
 		<title>唧...</title>
 	</head>
 	<body>
-		<div class="shake-little">
+		<div class="shake-horizontal">
 			<!-- <h2>闡釋者版本</h2> -->
 			<img
-				src="./images/tanuki-cute.png"
-				class="cute" />
+				src="./images/tanuki-rebellious.png"
+				class="rebellious" />
 			<img
 				src="./images/tanuki-angry.png"
 				class="angry" />
@@ -50,7 +50,8 @@
 		gap: 2rem;
 	}
 
-	.shake-little {
+	.shake-little,
+	.shake-horizontal {
 		width: 500px;
 		aspect-ratio: 1 / 1;
 		position: relative;
@@ -66,7 +67,8 @@
 		object-fit: contain;
 	}
 
-	.cute {
+	.cute,
+	.rebellious {
 		opacity: 1;
 	}
 
@@ -75,12 +77,13 @@
 		opacity: 0;
 	}
 
-	.shake-little:hover .cute {
+	.shake-little:hover .cute,
+	.shake-horizontal:hover .rebellious {
 		opacity: 0;
 	}
 
 	.shake-little:hover .sad,
-	.shake-little:hover .angry {
+	.shake-horizontal:hover .angry {
 		opacity: 1;
 	}
 </style>
